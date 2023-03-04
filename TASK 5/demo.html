@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Bootstrap Example</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="./TASK-5/css/bootstrap.min.css" rel="stylesheet">
+      <script src="./TASK-5/js/bootstrap.bundle.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+      <link rel="stylesheet" href="./TASK-5/css/style.css">
+   </head>
+   <body>
+      <!--header start  -->
+      <div class="container-fluid header" >
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-8">
+                  <!-- <div class="container-fluid"> -->
+                  <div class="row">
+                     <div class="col-sm-4">
+                        <img src="/images/Screenshot 2023-03-03 at 11.59.14 AM.png" alt="logo" class="logo">
+                     </div>
+                     <div class="col-sm-8">
+                        <div class="input-group mb-3 ">
+                           <input type="text" placeholder="search by Category,product name...." name="search" class="form-control" >
+                           <div class="input-group-append">
+                              <span class="input-group-text">    
+                              <button class="btn"  type="button">
+                              <i class="fa fa-search search" ></i>
+                              </button>                                                       
+                              </span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- </div> -->
+               </div>
+               <div class="col-sm-4 ">
+                  <!-- <div class="container-fluid" > -->
+                  <div class="row ">
+                     <div class="col-sm-1 ">
+                        <i class="fas fa-phone Phone" ></i>
+                     </div>
+                     <div class="col-sm-4" >
+                        <div class="ver">
+                           <h1 class="live">Live Chat or:</h1>
+                           <p class="number">180 091826389</p>
+                        </div>
+                     </div>
+                     <div class="col-sm-4">
+                        <h6 class="hello">Hello sign in / </h6>
+                        <div class="dropdown drop">
+                           <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" > 
+                           Account</button>
+                           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">Page1</a>
+                              <a class="dropdown-item" href="#">Page2</a>
+                              <a class="dropdown-item" href="#">Page3</a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-sm-1">
+                        <!-- <span class="input"> -->
+                        <button class="btn" type="button" id="btn">
+                        <i class="fa-solid fa-cart-shopping cart">&nbsp;Cart</i>   
+                        </button>
+                        <!-- </span> -->
+                     </div>
+                  </div>
+                  <!-- </div> -->
+               </div>
+            </div>
+         </div>
+         <div class="container  Category ">
+            <div class="row">
+               <div class="col">
+                  <div class="topnav">
+                     <button class="active-category" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-bars"></i>&nbsp;All Categories</button>
+                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item " href="#">Page1</a>
+                        <a class="dropdown-item" href="#">Page2</a>
+                        <a class="dropdown-item" href="#">Page3</a>
+                     </div>
+                     <a href="#" >Accessories</a> 
+                     <a href="#" >Apparels</a> 
+                     <a href="#" >Marijuana Concentrates</a> 
+                     <a href="#" >About us</a> 
+                     <a href="#" >Contact us</a>                   
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- header end -->
+      <!-- Life is better start-->
+      <div class="container-fluid better mb-1">
+         <div class="container" >
+            <h1 class="life">Life is  better with Brightscout</h1>
+            <p class="plant">Plant used to make medical,organic,nutritious and sustainable products.</p>
+            <div class="row d-flex  ">
+               <div class="col-sm-2 col-6 ">
+                  <a href="#">
+                  <img src="/images/edibles.jpeg"  class="image"></a>
+                  <h5 class="pic">Edibles</h5>
+               </div>
+               <div class="col-sm-2 col-6 ">
+                  <a href="#">
+                  <img src="/images/flowers.jpeg"  class="image"></a>
+                  <h5 class="pic">Flowers</h5>
+               </div>
+               <div class="col-sm-2 col-6 ">
+                  <a href="#">
+                  <img src="/images/pre-rolls.jpeg"  class="image" ></a>
+                  <h5 class="pic">pre-Rolls</h5>
+               </div>
+               <div class="col-sm-2 col-6 ">
+                  <a href="#">
+                  <img src="/images/thickner.jpeg"  class="image"></a>
+                  <h5 class="pic">Tinctures</h5>
+               </div>
+               <div class="col-sm-2 col-6">
+                  <a href="#">
+                  <img src="/images/produits.jpeg" class="image"></a>
+                  <h5 class="pic">Topicals</h5>
+               </div>
+               <div class="col-sm-2 col-6">
+                  <a href="#">
+                  <img src="/images/vapor.jpeg" class="image"></a>
+                  <h5 class="pic">Vaporizers</h5>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- life is better end -->
+      <!-- Top selling start -->
+      <div class="container-fluid pb-5 pt-5 top">
+         <div class="container bg-white pb-5   in" >
+            <h1 class="selling pt-3 pb-3">Top selling Products</h1>
+            <div id="carousel" class="carousel slide" data-bs-slide="carousel" >
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <div class="row ">
+                        <div class="col-sm-3 ">
+                           <div class="card mt-3 " style="width: 17rem;">
+                              <div class="card-header">
+                                 <img  src="/images/t-sirt1.png" alt="" class="card-img-top" >                                       
+                              </div>
+                              <div class="card-body">
+                                 <h1 class="card-title">Apparels</h1>
+                                 <p class="card-discription">Apparels Mens T-Shrit (Medium Size)</p>
+                                 <div class="price">
+                                    <span class="new-price">$90.00</span>
+                                    <span class="original-price ">$120.00</span>
+                                 </div>
+                              </div>
+                              <div class="card-footer">
+                                 <p>Add to cart</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-sm-3 ">
+                           <div class="card mt-3 "style="width: 17rem;">
+                              <div class="card-header">
+                                 <img  src="images/delta.jpeg" alt="" class="card-img-top"   >                                       
+                              </div>
+                              <div class="card-body">
+                                 <h1 class="card-title">Edibles</h1>
+                                 <p class="card-discription">Organic Strawberry Lemonade Gum...</p>
+                                 <div class="price ">
+                                    <span class="new-price ">$300.00</span>
+                                    <span class="original-price ">$520.00 </span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-sm-3 ">
+                           <div class="card mt-3"style="width: 17rem;">
+                              <div class="card-header">
+                                 <img  src="/images/oil.jpeg" alt=""class="card-img-top"  >                                       
+                              </div>
+                              <div class="card-body">
+                                 <h1 class="card-title">CBD</h1>
+                                 <p class="card-discription" >CBD+Melatonin (2000mg+180mg)(30ml)</p>
+                                 <div class="price">
+                                    <span class="new-price">$960.00</span>
+                                    <span class="original-price">$1020.00</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-sm-3 ">
+                           <div class="card mt-3"style="width: 17rem;">
+                              <div class="card-header">
+                                 <img  src="/images/bid heart.jpeg" alt="" class="card-img-top" >                                       
+                              </div>
+                              <div class="card-body">
+                                 <h1 class="card-title">Edibles</h1>
+                                 <p class="card-discription">Bird Hearts (500g) + Protein...</p>
+                                 <div class="price">
+                                    <span class="new-price">$450.00</span>
+                                    <span class="original-price">$620.00</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="row">
+                        <div class="col-sm-3 ">
+                           <div class="card mt-3" style="width: 17rem;">
+                              <div class="card-header">
+                                 <img  src="/images/pre.jpeg" alt="" class="card-img-top" >                                       
+                              </div>
+                              <div class="card-body">
+                                 <h1 class="card-title">Apparels</h1>
+                                 <p class="card-discription">Apparels Mens T-Shrit (Medium Size)</p>
+                                 <div class="price">
+                                    <span class="new-price">$90.00</span>
+                                    <span class="original-price">$120.00</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-sm-3 ">
+                           <div class="card mt-3" style="width: 17rem;">
+                              <div class="card-header">
+                                 <img  src="/images/flowers.jpeg" alt="" class="card-img-top" >                                       
+                              </div>
+                              <div class="card-body">
+                                 <h1 class="card-title">Edibles</h1>
+                                 <p>Organic Strawberry Lemonade Gum...</p>
+                                 <div class="price">
+                                    <span class="new-price">$300.00</span>
+                                    <span class="original-price">$520.00 </span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-sm-3 ">
+                           <div class="card mt-3" style="width: 17rem;">
+                              <div class="card-header">
+                                 <img  src="/images/melatonin.jpeg" alt="" class="card-img-top" >                                       
+                              </div>
+                              <div class="card-body">
+                                 <h1 class="card-title">CBD</h1>
+                                 <p class="card-discription">CBD + Melatonin (2000mg+180mg)(30ml)</p>
+                                 <div class="price">
+                                    <span class="new-price">$960.00</span>
+                                    <span class="original-price">$1020.00 </span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-sm-3 ">
+                           <div class="card mt-3" style="width: 17rem;">
+                              <div class="card-header">
+                                 <img  src="/images/bid heart.jpeg" alt="" class="card-img-top">                                       
+                              </div>
+                              <div class="card-body">
+                                 <h1 class="card-title">Edibles</h1>
+                                 <p class="card-discription">Bird Hearts (500g) + Protein...</p>
+                                 <div class="price">
+                                    <span class="new-price">$450.00</span>
+                                    <span class="original-price">$620.00</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <a class="carousel-control-next " href="#carousel" role="button" data-bs-slide="next">
+               <span class="carousel-control-next-icon" aria-hidden="true"></span>
+               <span class="sr-only">Next</span>
+               </a>
+            </div>
+            <h1 class="new-products">New Products</h1>
+            <div id="mycarousel" class="carousel slide" data-bs-ride="carousel">
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <div class="row">
+                        <div class="col-sm-3 ">
+                           <div class="card mt-3" style="width: 17rem;">
+                              <a href="#" ><span class="badge">New</span></a>
+                              <div class="card-header">
+                                 <img  src="/images/pre.jpeg" alt="" class="card-img-top" >                                       
+                              </div>
+                              <div class="card-body">
+                                 <h1 class="card-title">Pre-Rolls</h1>
+                                 <p class="card-discription">Apparels Mens Pre-Rolls (Medium Size)</p>
+                                 <div class="price">
+                                    <span class="new-price">$90.00</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-sm-3 ">
+                           <div class="card mt-3" style="width: 17rem;">
+                              <a href="#" ><span class="badge">New</span></a>
+                              <div class="card-header">
+                                 <img  src="/images/melatonin.jpeg" alt="" class="card-img-top" >                                       
+                              </div>
+                              <div class="card-body">
+                                 <h1 class="card-title">Apparels</h1>
+                                 <p class="card-discription">Endoca Hemp OilDrops 300mg CBD (3%),10ml)</p>
+                                 <div class="price">
+                                    <span class="new-price">$300.00</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-sm-3 ">
+                           <div class="card mt-3" style="width: 17rem;">
+                              <a href="#" ><span class="badge">New</span></a>
+                              <div class="card-header">
+                                 <img  src="/images/green leaf.jpeg" alt="" class="card-img-top" >                                        
+                              </div>
+                              <div class="card-body">
+                                 <h1 class="card-title">CBD</h1>
+                                 <p class="card-discription">CBD + Melatonin (2000mg+180mg)(30ml)</p>
+                                 <div class="price">
+                                    <span class="new-price">$960.00</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-sm-3 " >
+                           <div class="card mt-3" style="width: 17rem;">
+                              <a href="#" ><span class="badge">New</span></a>
+                              <div class="card-header">
+                                 <img  src="/images/bid heart.jpeg" alt="" class="card-img-top" >                                       
+                              </div>
+                              <div class="card-body">
+                                 <h1 class="card-title">Edibles</h1>
+                                 <p class="card-discription">Bird Hearts (500g) + Protein...</p>
+                                 <div class="price">
+                                    <span class="new-price">$450.00</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="row">
+                        <div class="col-sm-3 ">
+                           <div class="card mt-3" style="width: 17rem;">
+                              <a href="#" ><span class="badge">New</span></a>
+                              <div class="card-header">
+                                 <img  src="/images/pre.jpeg" alt="" class="card-img-top" >                                       
+                              </div>
+                              <div class="card-body">
+                                 <h1 class="card-title">Pre-Rolls</h1>
+                                 <p class="card-discription">Apparels Mens Pre-Rolls (Medium Size)</p>
+                                 <div class="price">
+                                    <span class="new-price">$90.00</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-sm-3  ">
+                           <div class="card mt-3" style="width: 17rem;">
+                              <a href="#" ><span class="badge">New</span></a>
+                              <div class="card-header">
+                                 <img  src="/images/oil.jpeg" alt="" class="card-img-top" >                                       
+                              </div>
+                              <div class="card-body">
+                                 <h1 class="card-title">Apparels</h1>
+                                 <p class="card-discription">Endoca Hemp OilDrops 300mg CBD (3%),10ml)</p>
+                                 <div class="price">
+                                    <span class="new-price">$300.00</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-sm-3 ">
+                           <div class="card mt-3" style="width: 17rem;">
+                              <a href="#" ><span class="badge">New</span></a>
+                              <div class="card-header">
+                                 <img  src="/images/melatonin.jpeg" alt="" class="card-img-top" >                                        
+                              </div>
+                              <div class="card-body">
+                                 <h1 class="card-title">CBD</h1>
+                                 <p class="card-discription">CBD + Melatonin (2000mg+180mg)(30ml)</p>
+                                 <div class="price">
+                                    <span class="new-price">$960.00</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-sm-3 ">
+                           <div class="card mt-3" style="width: 17rem;">
+                              <a href="#" ><span class="badge">New</span></a>
+                              <div class="card-header">
+                                 <img  src="/images/bid heart.jpeg" alt="" class="card-img-top">                                        
+                              </div>
+                              <div class="card-body">
+                                 <h1 class="card-title">Edibles</h1>
+                                 <p class="card-discription">Bird Hearts (500g) + Protein...</p>
+                                 <div class="price">
+                                    <span class="new-price">$450.00</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <a class="carousel-control-next " href="#mycarousel" role="button" data-bs-slide="next">
+               <span class="carousel-control-next-icon" aria-hidden="true"></span>
+               <span class="sr-only">Next</span>
+               </a>
+            </div>
+         </div>
+      </div>
+      <!-- Top selling end -->
+      <!-- 3 image start -->
+      <div class="container-fluid starter-pack " >
+         <p class="combos">The Starter Pack (Combos)</p>
+         <p class="plant-used">Plant used to make medical,organic,nutritious and sustainable products.</p>
+         <div class="container">
+            <div class="row plants">
+               <div class="col-sm-4">
+                  <img class="images" src="/images/3 of 2.jpeg" alt="" >
+                  <div class="title">
+                     Basic brightscot
+                     <p style="text-align:center;"> Starter kit</p>
+                  </div>
+                  <div class="price">
+                     <span class="new-price" > From $90.00</span>
+                  </div>
+                  </a>
+               </div>
+               <div class="col-sm-4">
+                  <img class="images" src="/images/3 of 3.jpeg" alt=""  >
+                  <div class="title">
+                     Ultimate brightscot
+                     <p style="text-align:center;"> Starter kit</p>
+                  </div>
+                  <div class="price">
+                     <span class="new-price" > From $1290.00</span>
+                  </div>
+                  </a>
+               </div>
+               <div class="col-sm-4">
+                  <img class="images" src="/images/3 of 2.jpeg" alt=""  >
+                  <div class="title">
+                     All Basic brightscot
+                     <p style="text-align:center;"> Starter kit</p>
+                  </div>
+                  <div class="price">
+                     <span class="new-price" > From $1100.00</span>
+                  </div>
+                  </a>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-12 pb-4 pt-4" style="text-align:center;">
+                  <button type="button" class="btn " style="border-radius:25px;color:white;
+                     text-align: center;font-size: 18px;font-weight: 300;padding-left: 50px;padding-right: 50px;background: linear-gradient(to right,#1eb592 0%,#47c96d 100%);">See all Combos Offers</button>
+               </div>
+            </div>
+            <br>
+         </div>
+      </div>
+      <!-- 3 image end  -->
+      <!-- Top catogory start -->
+      <div class="container-fluid Top-catogory ">
+         <div class="container Top-catogories" >
+            <h3 class="Top-Category-Products">Top Category Products</h3>
+            <div class="row  " >
+               <div class="col" style="padding-bottom:10px">
+                  <ul class="se">
+                     <li class="nav-item">
+                        <a class="submenu hover-underline-animation text-decoration-none" href="#">Edibles</a>
+                     </li>
+                     <li class="nav-item ">
+                        <a class="submenu hover-underline-animation text-decoration-none" href="#">Flowers</a>
+                     </li>
+                     <li class="nav-item ">
+                        <a class="submenu hover-underline-animation text-decoration-none" href="#">Tinctures</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-sm-3 ">
+                  <div class="card mt-3" style="width: 17rem;">
+                     <div class="card-header">
+                        <img  src="/images/cone.jpeg" alt="" class="card-img-top" >                                       
+                     </div>
+                     <div class="card-body">
+                        <h1 class="card-title">Apparels</h1>
+                        <p class="card-discription">Stash-Pro Stash-Pro Unbleached 56 Pro</p>
+                        <div class="price">
+                           <span class="new-price">$90.00</span>
+                           <span class="original-price">$120.00</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-3 ">
+                  <div class="card mt-3" style="width: 17rem;">
+                     <div class="card-header">
+                        <img  src="/images/pre.jpeg" alt="" class="card-img-top" >                                       
+                     </div>
+                     <div class="card-body">
+                        <h1 class="card-title">Edibles</h1>
+                        <p class="card-discription">Organic Strawberry Lemonade Gum...</p>
+                        <div class="price">
+                           <span class="new-price">$300.00</span>
+                           <span class="original-price">$520.00</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-3 ">
+                  <div class="card mt-3" style="width: 17rem;">
+                     <div class="card-header"> 
+                        <img  src="/images/melatonin.jpeg" alt="" class="card-img-top">                                       
+                     </div>
+                     <div class="card-body">
+                        <h1 class="card-title">CBD</h1>
+                        <p class="card-discription">CBD+Melatonin(2000mg +180mg)(30ml)</p>
+                        <div class="price">
+                           <span class="new-price">$960.00</span>
+                           <span class="original-price">$1020.00</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-3 ">
+                  <div class="card mt-3" style="width: 17rem;">
+                     <div class="card-header">
+                        <img  src="/images/hemp.jpeg" alt="" class="card-img-top" >                                     
+                     </div>
+                     <div class="card-body">
+                        <h1 class="card-title">Edibles</h1>
+                        <p class="card-discription">Bird  Hemp Hearts (500g) + Protein...</p>
+                        <div class="price">
+                           <span class="new-price">$450.00</span>
+                           <span class="original-price">$620.00</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row" ">
+               <div class="col-sm-3 ">
+                  <div class="card mt-3" style="width: 17rem;">
+                     <a href="#" ><span class="badge">New</span></a>
+                     <div class="card-header">
+                        <img  src="/images/melatonin.jpeg" alt=""class="card-img-top"  >                                       
+                     </div>
+                     <div class="card-body">
+                        <h1 class="card-title">Pre-Rolls</h1>
+                        <p class="card-discription">Apparels Mens Pre-Rolls (Medium Size)</p>
+                        <div class="price">
+                           <span class="new-price">$90.00</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-3 ">
+                  <div class="card mt-3" style="width: 17rem;">
+                     <a href="#" ><span class="badge">New</span></a>
+                     <div class="card-header">
+                        <img  src="/images/delta.jpeg" alt="" class="card-img-top" >                                       
+                     </div>
+                     <div class="card-body">
+                        <h1 class="card-title">Apparels</h1>
+                        <p class="card-discription">Endoca Hemp OilDrops 300mg CBD (3%),10ml)</p>
+                        <div class="price">
+                           <span class="new-price">$300.00</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-3">
+                  <div class="card mt-3" style="width: 17rem;">
+                     <a href="#" ><span class="badge">New</span></a>
+                     <div class="card-header">
+                        <img  src="/images/green leaf.jpeg" alt=""class="card-img-top" >                                      
+                     </div>
+                     <div class="card-body">
+                        <h1 class="card-title">CBD</h1>
+                        <p class="card-discription">CBD+Melatonin(2000mg +180mg)(30ml)</p>
+                        <div class="price ">
+                           <span class="new-price">$960.00</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-3 ">
+                  <div class="card mt-3" style="width: 17rem;">
+                     <a href="#" ><span class="badge">New</span></a>
+                     <div class="card-header">
+                        <img  src="/images/bid heart.jpeg" alt=""class="card-img-top" >                                       
+                     </div>
+                     <div class="card-body">
+                        <h1 class="card-title">Edibles</h1>
+                        <p class="card-discription">Bird Hearts (500g) + Protein...</p>
+                        <div class="price">
+                           <span class="new-price">$450.00</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="row" >
+                  <div class="col-12 pb-4 pt-4" style="text-align:center;">
+                     <button type="button" class="btn " style="border-radius:25px;color:white;
+                        text-align: center;font-size: 18px;font-weight: 300;padding-left: 50px;padding-right: 50px;background: linear-gradient(to right,#1eb592 0%,#47c96d 100%);">View all products</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Top catogory end -->
+      <!-- item viewed start -->
+      <div class="container-fluid items-viewed  pt-5 pb-5" >
+         <div class="container viewed-items pb-5">
+            <h3 class="you-viewed ">Items you've viewed</h3>
+            <div id="carouselExampleControls" class="carousel slide" >
+               <div class="carousel-inner">
+                  <div class="carousel-item active" >
+                     <div class="row">
+                        <div class="col-sm-3 ">
+                           <div class="card mt-3" style="width: 17rem;">
+                              <div class="card-header">
+                                 <img  src="/images/t-sirt1.png" alt="" class="card-img-top">                                       
+                              </div>
+                              <div class="card-body">
+                                 <h1 class="card-title">Apparels</h1>
+                                 <p class="card-discription">Apparels Mens T-Shrit (Medium Size)</p>
+                                 <div class="price">
+                                    <span class="new-price">$90.00</span>
+                                    <span class="original-price">
+                                    $120.00
+                                    </span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-sm-3 ">
+                           <div class="card mt-3" style="width: 17rem;">
+                              <div class="card-header">
+                                 <img  src="/images/straberry.jpeg" alt=""class="card-img-top">                                       
+                              </div>
+                              <div class="card-body">
+                                 <h1 class="card-title">Edibles</h1>
+                                 <p class="card-discription">Organic Strawberry Lemonade Gum...</p>
+                                 <div class="price">
+                                    <span class="new-price">$300.00</span>
+                                    <span class="original-price">
+                                    $520.00
+                                    </span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-sm-3">
+                           <div class="card mt-3" style="width: 17rem;">
+                              <div class="card-header">
+                                 <img  src="/images/oil.jpeg" alt="" class="card-img-top">                                       
+                              </div>
+                              <div class="card-body">
+                                 <h1 class="card-title">CBD</h1>
+                                 <p class="card-discription">CBD+Melatonin(2000mg +180mg)(30ml)</p>
+                                 <div class="price">
+                                    <span class="new-price">$960.00</span>
+                                    <span class="original-price">
+                                    $1020.00
+                                    </span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-sm-3 ">
+                           <div class="card mt-3" style="width: 17rem;">
+                              <div class="card-header">
+                                 <img  src="/images/hemp.jpeg" alt="" class="card-img-top">                                       
+                              </div>
+                              <div class="card-body">
+                                 <h1 class="card-title">Edibles</h1>
+                                 <p class="card-discription">Bird Hearts (500g) + Protein...</p>
+                                 <div class="price">
+                                    <span class="new-price">$450.00</span>
+                                    <span class="original-price">
+                                    &nbsp;&nbsp; $620.00
+                                    </span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="row">
+                        <div class="col-sm-3 ">
+                           <div class="card mt-3" style="width: 17rem;">
+                              <div class="card-header">
+                                 <img  src="/images/t-sirt1.png" alt="" class="card-img-top">                                       
+                              </div>
+                              <div class="card-body">
+                                 <h1 class="card-title">Apparels</h1>
+                                 <p class="card-discription">Apparels Mens T-Shrit (Medium Size)</p>
+                                 <div class="price">
+                                    <span class="new-price">$90.00</span>
+                                    <span class="original-price">
+                                    $120.00
+                                    </span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-sm-3 ">
+                           <div class="card mt-3" style="width: 17rem;">
+                              <div class="card-header">
+                                 <img  src="/images/hemp.jpeg" alt="" class="card-img-top">                                       
+                              </div>
+                              <div class="card-body">
+                                 <h1 class="card-title">Edibles</h1>
+                                 <p class="card-discription">Organic Strawberry Lemonade Gum...</p>
+                                 <div class="price">
+                                    <span class="new-price">$300.00</span>
+                                    <span class="original-price">
+                                    $520.00
+                                    </span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-sm-3 ">
+                           <div class="card mt-3" style="width: 17rem;">
+                              <div class="card-header">
+                                 <img  src="/images/oil.jpeg" alt="" class="card-img-top">                                       
+                              </div>
+                              <div class="card-body">
+                                 <h1 class="card-title">CBD</h1>
+                                 <p class="card-discription">CBD+Melatonin(2000mg +180mg)(30ml)</p>
+                                 <div class="price">
+                                    <span class="new-price">$960.00</span>
+                                    <span class="original-price">
+                                    $1020.00
+                                    </span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-sm-3 ">
+                           <div class="card mt-3" style="width: 17rem;">
+                              <div class="card-header">
+                                 <img  src="/images/straberry.jpeg" alt="" class="card-img-top">                                       
+                              </div>
+                              <div class="card-body">
+                                 <h1 class="card-title">Edibles</h1>
+                                 <p class="card-discription">Bird Hearts (500g) + Protein...</p>
+                                 <div class="price">
+                                    <span class="new-price">$450.00</span>
+                                    <span class="original-price">
+                                    $620.00
+                                    </span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+               <span class="carousel-control-next-icon" aria-hidden="true"></span>
+               <span class="sr-only">Next</span>
+               </a>
+            </div>
+         </div>
+      </div>
+      <!-- item viewed end -->
+      <!-- about start -->
+      <div class="container-fluid about ">
+         <div class="container ">
+            <div class="row">
+               <div class="col-sm-5">
+                  <h4 class="happy">Our Happy Customers</h4>
+                  <p class="paragraph">Product reviews are arguably the most useful way to eliminate shoppers concerns regarding a product. A majority of the people are influenced by product reviews in their purchase.</p>
+                  <p class="thousand">Thousands of Reviews.Trusted by 10 Thousand + Customers</p>
+                  <span class="fa fa-star checked star"></span>
+                  <span class="fa fa-star checked star" ></span>
+                  <span class="fa fa-star checked star"></span>
+                  <span class="fa fa-star stars " ></span>
+                  <span class="fa fa-star stars" ></span>
+               </div>
+               <div class="col-sm-7 mb-5">
+                  <div class="container gupta">
+                     <div id="caroselprofile" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                           <div class="carousel-item active" >
+                              <div class="row guptha-row">
+                                 <div class="col-sm-2" >
+                                    <img class="image-top" src="/images/gup1.jpeg" alt="" >
+                                 </div>
+                                 <div class="col-sm-7">
+                                    <h1 class="Bindhu">Bindu Guptha </h1>
+                                    <p class="reviewer">Product Reviwer</p>
+                                    <span class="fa fa-star checked sttar" ></span>
+                                    <span class="fa fa-star checked sttar" ></span>
+                                    <span class="fa fa-star checked sttar" ></span>
+                                    <span class="fa fa-star " ></span>
+                                    <span class="fa fa-star " >  3.0</span>
+                                 </div>
+                                 <p class="leorm">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                              </div>
+                           </div>
+                           <div class="carousel-item">
+                              <div class="row" style="padding-top:30px;">
+                                 <div class="col-sm-2">
+                                    <img class="image-top" src="/images/hendry.jpeg" alt="">
+                                 </div>
+                                 <div class="col-sm-7">
+                                    <h1 style="font-size:20px;text-align: left;">Hennry</h1>
+                                    <p style="font-weight:lighter;">Product Reviwer</p>
+                                    <span class="fa fa-star checked sttar" ></span>
+                                    <span class="fa fa-star checked sttar" ></span>
+                                    <span class="fa fa-star checked sttar" ></span>
+                                    <span class="fa fa-star checked sttar" ></span>
+                                    <span class="fa fa-star " >  4.0</span>
+                                 </div>
+                                 <p class="leorm">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="carousel-item">
+                              <div class="row" style="padding-top:30px;">
+                                 <div class="col-sm-2">
+                                    <img class="image-top" src="/images/hendry.jpeg" alt="">
+                                 </div>
+                                 <div class="col-sm-7">
+                                    <h1 style="font-size:20px;text-align: left;">Mahath</h1>
+                                    <p style="font-weight:lighter;">Product Reviwer</p>
+                                    <span class="fa fa-star checked sttar" ></span>
+                                    <span class="fa fa-star checked sttar" ></span>
+                                    <span class="fa fa-star checked sttar" ></span>
+                                    <span class="fa fa-star checked sttar" ></span>
+                                    <span class="fa fa-star " >  4.0</span>
+                                 </div>
+                                 <p class="leorm">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <a class="carousel-control-nxt" href="#caroselprofile" data-bs-slide="prev"  >
+                  <span class="dot" ></span>
+                  <span class="dot" ></span>
+                  <span class="dot"></span> 
+                  </a> 
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- about end -->
+      <!-- service start -->
+      <div class="container-fluid service-content pb-5">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-4">
+                  <div class="container book">
+                     <br>
+                     <h1 class="book-by-phone">Book By Phone</h1>
+                     <div class="row">
+                        <div class="col-sm-2">
+                           <i class="fa-solid fa-mobile-screen-button"></i>
+                        </div>
+                        <div class="col-sm-9">
+                           <h2 class="contact-number">+1&nbsp; 123-456-7890</h2>
+                           <p class="booking-time">Booking Time:8.00AM-10.00PM</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-4">
+                  <div class="container feedback">
+                     <br>
+                     <h1 class="Give-Your-Feedback">Give Your Feedback</h1>
+                     <div class="row">
+                        <div class="col-sm-2">
+                           <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="col-sm-9">
+                           <h2 class="feedback-canabid">feedback@canabid.com</h2>
+                           <p class="help-us">Help as improve!</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-4">
+                  <div class="container services">
+                     <br>
+                     <h1 class="service-and-support">Service and Support</h1>
+                     <div class="row">
+                        <div class="col-sm-2">
+                           <i class="fa-sharp fa-solid fa-headset"></i>
+                        </div>
+                        <div class="col-sm-9">
+                           <div class="support-center">Support Center</div>
+                           <p class="doubt">Get your doubts cleared </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- service end -->
+      <!-- footer start -->
+      <div class="container-fluid" style="background-color: #146473; ">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-4" style="padding-top: 20px;">
+                  <img src="/images/Screenshot 2023-03-03 at 12.44.17 PM.png" alt="logo" width="70%" height="30%"><br><br>
+                  <p style="color:white; font-size: 15px;font-weight:200;">Product reviews are arguably the most useful way to eliminate shoppers concerns regarding a product.
+                     A majority of the people are influenced by product reviews in their purchase.
+                  </p>
+               </div>
+               <div class="col-sm-4" style="padding-top:60px;">
+                  <h1 style="color:white; font-size: 20px;">Quick Link</h1>
+                  <nav class="flex-column d-flex ">
+                     <a class="text-decoration-none  Quick" href="#">Seller Registration</a>
+                     <a class="text-decoration-none  Quick" href="#">Terms and Conditions</a>
+                     <a class="text-decoration-none  Quick" href="#">About Us</a>
+                     <a class="text-decoration-none  Quick" href="#">Contact Us</a>
+                  </nav>
+               </div>
+               <div class="col-sm-3" style="padding-top:60px; color: white;">
+                  <h1 style="font-size: 20px;">Find us</h1>
+                  <p style="font-size: 15px;font-weight:200;"><i class="fa fa-envelope"></i>&nbsp;&nbsp;&nbsp;&nbsp; support@canabid.com</p>
+                  <p style="font-size: 15px;font-weight:200;"><i class="fa fa-phone"></i> &nbsp;&nbsp;&nbsp;&nbsp; +1 123-456-7890</p>
+                  <h2 style="font-size: 20px;">Contact with us</h2>
+                  <p style="font-size:20px;">
+                     <i class="fa-brands fa-facebook-f" style="margin-right:30px;"></i>
+                     <i class="fa-brands fa-google-plus-g" style="margin-right:30px;"></i>
+                     <i class="fa-brands fa-linkedin-in" style="margin-right:30px;"></i>  
+                     <i class="fa-brands fa-twitter" style="margin-right:30px;"></i> 
+                  </p>
+               </div>
+            </div>
+            <hr style="color: white;">
+            <div class="row">
+               <div class="col-sm-6">
+                  <p class="copy "> &copy; 2022 canabid.com,all right reserved</p>
+               </div>
+               <div class="col-sm-6 priv" >
+                  <a class="policy">Privacy Policy</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- footer end  -->
+   </body>
+</html>
